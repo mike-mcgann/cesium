@@ -139,7 +139,7 @@ click: function () { closeClicked.raiseEvent(this); }');
         });
 
         //Chrome does not send the load event unless we explicitly set a src
-        frame.setAttribute('src', 'about:blank');
+        frame.setAttribute('src', buildModuleUrl('Widgets/InfoBox/blank.html'));
     };
 
     defineProperties(InfoBox.prototype, {
